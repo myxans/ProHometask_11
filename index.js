@@ -4,7 +4,11 @@ let arr = array.split(', ');
 
 alert(`Наш масив ${arr.join(', ')}`);
 
-alert(`Відсортування масиву за зростанням ${(arr.sort())}`);
+arr.sort(function (a, b) {
+    return a - b;
+});
+
+alert(` масив за зростанням ${arr}`);
 
 (arr.splice(1, 3));
 
